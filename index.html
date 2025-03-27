@@ -6,11 +6,19 @@
     <title>Mi Proyecto Destacado</title>
     <style>
         body {
-            margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #111;
-            color: #f0f0f0;
-            line-height: 1.6;
+            background: radial-gradient(circle at center, #ff00ff55, #0000ff55, #00ffff55, #000);
+            background-size: 400% 400%;
+            animation: glowing 10s infinite alternate;
+        }
+
+        @keyframes glowing {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            100% {
+                background-position: 100% 50%;
+            }
         }
 
         header {
@@ -114,26 +122,34 @@
         <div class="contact">
             <h3>Contacto:</h3>
             <p>Puedes escribirme a: <a href="mailto:albertosastrejacome@gmail.com">albertosastrejacome@gmail.com</a></p>
+            <p>
+                También puedes suscribirte y recibir un e-mail cada vez que existan actualizaciones.
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1rBNunLGufIv618wbBvmp3H_LW_ANDYj75Nee2sExYE-hIw/viewform?usp=header" target="_blank">
+                    <img src="https://images.vexels.com/media/users/3/140143/isolated/preview/3f1c13ba76a361646ffc1b7422697fe9-icono-de-plata-de-correo-electronico-3d.png" alt="Suscribirse" width="40">
+                </a>
+            </p>
         </div>
-        <div class="Version 0.1">
+        <div class="Version 0.3">
             <h3>"¿Qué incorpora la última versión subida? (V0.2)"</h3>
             <ul>
                 <li>Estructura básica del juego.</li>
                 <li>Incorporación de fuentes futuristas.</li>
                 <li>Fondo de pantalla en la ventana de juego.</li>
                 <li>Cambio en la forma de los botones.</li>
+                <li>Introducción de música.</li>
+                <li>Mejoras visuales.</li>
             </ul>
         </div>
         <div class="roadmap">
             <h3>¡¡AÚN EN FASE ALPHA!!</h3>
             <h3>Roadmap - ¿Qué viene después?</h3>
             <ul>
-                <li>Introducción de sonidos y música.</li>
+                <li>Introducción de efectos de sonidos.</li>
                 <li>Mejoras visuales.</li>
+                <li>Ajuste de dificultad y posibles niveles.</li>
                 <li>Reparación de bugs.</li>
             </ul>
         </div>
-
     </div>
 
     <footer>
